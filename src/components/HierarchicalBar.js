@@ -8,7 +8,6 @@ function HierarchicalBar({ dados }) {
     const svgRef = useRef()
     useEffect(() => {
         setData(dados)
-        console.log(data)
         drawChart(data)
     }, [data])
 
