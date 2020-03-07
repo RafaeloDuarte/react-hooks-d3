@@ -6,15 +6,18 @@ import React from 'react';
 //import Fourth from './components/Fourth';
 //import Sixth from './components/Sixth';
 //import ChartComponent from './components/ChartComponent'
-import HierarchicalBar from '../src/components/HierarchicalBar'
-import { dados } from '../src/config/mock'
+//import HierarchicalBar from '../src/components/HierarchicalBar'
+//import ReduxTeste from './components/ReduxTeste';
+import HookReduxBarChart from '../src/components/HookReduxBarChart'
+import { Provider } from 'react-redux';
+import store from './reducers'
 
 function App() {
 
   return (
-    <>
-      <HierarchicalBar dados={dados}/>
-    </>
+    <Provider store={store}>
+      <HookReduxBarChart/>
+    </Provider>
   )
 }
 
